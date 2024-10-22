@@ -33,7 +33,7 @@
     font-size: 40px;
     font-weight: 900;
     -webkit-text-stroke: 1px white;
-    transition: 2s;
+    transition: 0.1s;
 }
 
 .kyzma-button:active {
