@@ -38,5 +38,4 @@
 .kyzma-button:active {
     transform: translateY(10px);
     box-shadow: 0 0 5px 1px white;
-	transition: 20ms;
 }
