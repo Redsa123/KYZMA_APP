@@ -33,7 +33,11 @@
 }
 
 .kyzma-button-container {
+    margin-top: 10px;
     margin-bottom: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
 .kyzma-button {
@@ -42,7 +46,7 @@
     box-shadow: 0 10px 0 rgb(48, 48, 48);
     border-radius: 20px;
     padding: 15px;
-    width: fit-content;
+    width: 100%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: #000000;
     color: red;
@@ -54,4 +58,21 @@
 .kyzma-button:active {
     transform: translateY(10px);
     box-shadow: 0 0 5px 1px white;
+}
+
+
+.controls-container {
+    width: 90%;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #6d6d6d;
+    color: white;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.upgrades_shop-container {
+    display: none; 
 }
