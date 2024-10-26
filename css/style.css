@@ -60,13 +60,11 @@
     box-shadow: 0 0 5px 1px white;
 }
 
-
 .boss-hp-container {
     width: fit-content;
     background-color: #fff;
     padding: 2px 10px 2px 10px;
 }
-
 
 .controls-container {
     width: 90%;
@@ -79,7 +77,8 @@
     color: white;
     font-weight: 700;
     font-size: 16px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }
 
 .controls_shop-open {
@@ -94,6 +93,84 @@
     color: whitesmoke;
 }
 
-.upgrades_shop-container {
-    display: none; 
+.modal-upgrade_container {
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    position: absolute;
+    background-color: #191919db;
+    top: 0;
+    /* display: none; */
+}
+
+.modal-upgrade {
+    width: 90%;
+    height: 80%;
+    margin: 50px auto auto auto;
+    background-color: #ee55ff;
+    border-radius: 20px;
+}
+
+.fa-circle-xmark {
+    margin: 15px auto 0px 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.modal-upgrade_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aquamarine;
+    font-family: kablammo;
+    width: 100%;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 0 0 3px #000000;
+}
+
+.modal-upgrade_upgrades-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.modal-upgrade_coins,
+.modal-upgrade_damage,
+.modal-upgrade_passive-damage {
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.modal-upgrade_coins {
+    text-decoration: none;
+}
+
+.player-rank {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.modal-upgrade_coins-number,
+.modal-upgrade_damage-price,
+.modal-upgrade_passive-damage-price {
+    color: rgb(255, 217, 0);
+    font-size: 24px;
+}
+
+.modal-upgrade_damage:active,
+.modal-upgrade_passive-damage:active {
+    text-decoration: none;
+    color: rgb(90, 183, 152);
+    .modal-upgrade_damage-price,
+    .modal-upgrade_passive-damage-price {
+        color: rgb(208, 177, 0);
+    }
 }
