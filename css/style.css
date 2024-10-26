@@ -100,7 +100,6 @@
     position: absolute;
     background-color: #191919db;
     top: 0;
-    /* display: none; */
 }
 
 .modal-upgrade {
@@ -173,4 +172,8 @@
     .modal-upgrade_passive-damage-price {
         color: rgb(208, 177, 0);
     }
+}
+
+.display-none {
+    display: none;
 }
