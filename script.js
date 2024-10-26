@@ -62,10 +62,12 @@ kyzmaBtn.addEventListener("click", () => {
 modalUpgradeDamage.addEventListener("click", () => {
     if (currentKyzmaRespect >= currentModalDamagePrice) {
         damage++;
+		currentDamageSpan = damage;
         currentKyzmaRespect = currentKyzmaRespect - currentModalDamagePrice;
         currentModalDamagePrice = (currentModalDamagePrice * 1.3).toFixed(2);
         modalDamagePrice.innerHTML = currentModalDamagePrice;
         modalCoinsNumber.innerHTML = currentKyzmaRespect.toFixed(1);
         kyzmaRespect.innerHTML = currentKyzmaRespect.toFixed(1);
+		damageSpan.innerHTML = currentDamageSpan;
     }
 });
