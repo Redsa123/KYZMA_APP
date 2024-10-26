@@ -44,7 +44,7 @@ kyzmaBtn.addEventListener("click", () => {
     if (currentBossHP <= 0) {
         bossNr++;
         enemy.src = `./img/image ${bossNr}.jpg`;
-        currentBossHP = (10 * bossNr * 1.3).toFixed(1);
+        currentBossHP = (10 * bossNr * 2).toFixed(1);
         if (bossNr == 13) {
             currentBossHP = 1000;
         }
