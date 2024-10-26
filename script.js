@@ -12,7 +12,7 @@ const enemy = document.querySelector(".enemy");
 let currentBossHP = +bossHP.innerHTML;
 let currentKyzmaRespect = +kyzmaRespect.innerHTML;
 let currentModalDamagePrice = +modalDamagePrice.innerHTML;
-let damage = 5;
+let damage = 1;
 let bossNr = 6;
 
 console.log(enemy.src);
