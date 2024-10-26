@@ -37,10 +37,10 @@ modalCloser.addEventListener("click", () => {
 
 kyzmaBtn.addEventListener("click", () => {
     currentBossHP -= damage;
-    bossHP.innerHTML = currentBossHP;
+    bossHP.innerHTML = Math.floor(currentBossHP);
 
     currentKyzmaRespect += damage;
-    kyzmaRespect.innerHTML = currentKyzmaRespect;
+    kyzmaRespect.innerHTML = Math.floor(currentKyzmaRespect);
 
     if (currentBossHP <= 0) {
         bossNr++;
