@@ -45,17 +45,17 @@ kyzmaBtn.addEventListener("click", () => {
     if (currentBossHP <= 0) {
         bossNr++;
         enemy.src = `./img/image ${bossNr}.jpg`;
-        currentBossHP = 10 * bossNr * bossNr *bossNr;
+        currentBossHP = 4 * bossNr * bossNr * bossNr;
         bossNumber.innerHTML = bossNr - 5;
 
         if (bossNr == 13) {
-            currentBossHP = 1000;
+            currentBossHP = 15000;
         }
         if (bossNr == 14) {
             currentBossHP = "Game Over.";
             kyzmaRespect.innerHTML = "-999999999999";
             damageSpan.innerHTML = "-999999999999";
-            currentModalDamagePrice = 1000000000000000000000000000;
+            currentModalDamagePrice = 1000000000000000000000000000n;
             kyzmaBtn.classList.add("display-none");
         }
         bossHP.innerHTML = currentBossHP;
@@ -69,8 +69,8 @@ modalUpgradeDamage.addEventListener("click", () => {
         currentKyzmaRespect = currentKyzmaRespect - currentModalDamagePrice;
         currentModalDamagePrice = (currentModalDamagePrice * 1.3).toFixed(2);
         modalDamagePrice.innerHTML = currentModalDamagePrice;
-        modalCoinsNumber.innerHTML = currentKyzmaRespect.toFixed(1);
-        kyzmaRespect.innerHTML = currentKyzmaRespect.toFixed(1);
+        modalCoinsNumber.innerHTML = Math.floor(currentKyzmaRespect);
+        kyzmaRespect.innerHTML = Math.floor(currentKyzmaRespect);
         damageSpan.innerHTML = currentDamageSpan;
     }
 });
