@@ -11,16 +11,19 @@
 .header-container {
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    height: 90px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px;
     background-color: #fff;
     box-shadow: 0 0 5px 5px white;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: start;
 }
 
 .header {
-    font-size: 80px;
+    font-size: 40px;
     color: #000;
 }
 
@@ -172,6 +175,10 @@
     .modal-upgrade_passive-damage-price {
         color: rgb(208, 177, 0);
     }
+}
+
+.boss-nr-container {
+    font-size: 12px;
 }
 
 .display-none {

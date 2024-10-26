@@ -9,6 +9,7 @@ const modalDamagePrice = document.querySelector(".modal-upgrade_damage-price");
 const modalUpgradeDamage = document.querySelector(".modal-upgrade_damage");
 const enemy = document.querySelector(".enemy");
 const damageSpan = document.querySelector(".damage");
+const bossNumber = document.querySelector(".boss-number");
 
 let currentBossHP = +bossHP.innerHTML;
 let currentKyzmaRespect = +kyzmaRespect.innerHTML;
@@ -45,6 +46,7 @@ kyzmaBtn.addEventListener("click", () => {
         bossNr++;
         enemy.src = `./img/image ${bossNr}.jpg`;
         currentBossHP = (10 * bossNr * 2).toFixed(1);
+        bossNumber.innerHTML = bossNr - 5;
         if (bossNr == 13) {
             currentBossHP = 1000;
         }
@@ -52,7 +54,7 @@ kyzmaBtn.addEventListener("click", () => {
             currentBossHP = "Game Over.";
             kyzmaRespect.innerHTML = "-999999999999";
             damageSpan.innerHTML = "-999999999999";
-			currentModalDamagePrice = 1000000000000000000000000000;
+            currentModalDamagePrice = 1000000000000000000000000000;
             kyzmaBtn.classList.add("display-none");
         }
         bossHP.innerHTML = currentBossHP;
@@ -62,12 +64,12 @@ kyzmaBtn.addEventListener("click", () => {
 modalUpgradeDamage.addEventListener("click", () => {
     if (currentKyzmaRespect >= currentModalDamagePrice) {
         damage++;
-		currentDamageSpan = damage;
+        currentDamageSpan = damage;
         currentKyzmaRespect = currentKyzmaRespect - currentModalDamagePrice;
         currentModalDamagePrice = (currentModalDamagePrice * 1.3).toFixed(2);
         modalDamagePrice.innerHTML = currentModalDamagePrice;
         modalCoinsNumber.innerHTML = currentKyzmaRespect.toFixed(1);
         kyzmaRespect.innerHTML = currentKyzmaRespect.toFixed(1);
-		damageSpan.innerHTML = currentDamageSpan;
+        damageSpan.innerHTML = currentDamageSpan;
     }
 });
