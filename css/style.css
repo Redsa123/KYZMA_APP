@@ -67,11 +67,11 @@
 }
 
 .controls-container {
-    width: 90%;
+    width: 100%;
     padding: 15px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #7b7b7b;
     color: white;
