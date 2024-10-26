@@ -13,7 +13,7 @@ const damageSpan = document.querySelector(".damage");
 let currentBossHP = +bossHP.innerHTML;
 let currentKyzmaRespect = +kyzmaRespect.innerHTML;
 let currentModalDamagePrice = +modalDamagePrice.innerHTML;
-let damage = 1000;
+let damage = 1;
 let bossNr = 6;
 let currentDamageSpan = damageSpan.innerHTML;
 
