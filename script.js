@@ -36,7 +36,7 @@ kyzmaBtn.addEventListener("click", () => {
 
     if (currentBossHP <= 0) {
         bossNr++;
-        enemy.src = `./img/image ${bossNr}.png`;
+        enemy.src = `./img/image ${bossNr}.jpg`;
     }
 });
 
